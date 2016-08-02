@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86699FD849BB83BD5470CF24 /* libPods-CellAutoHeight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC593DCAEE632F237FB9DB8C /* libPods-CellAutoHeight.a */; };
 		A4E225DC1D50F3A00026EB0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E225DB1D50F3A00026EB0A /* main.m */; };
 		A4E225DF1D50F3A00026EB0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E225DE1D50F3A00026EB0A /* AppDelegate.m */; };
 		A4E225E21D50F3A00026EB0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E225E11D50F3A00026EB0A /* ViewController.m */; };
 		A4E225E51D50F3A00026EB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E225E31D50F3A00026EB0A /* Main.storyboard */; };
 		A4E225E71D50F3A00026EB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E225E61D50F3A00026EB0A /* Assets.xcassets */; };
 		A4E225EA1D50F3A00026EB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E225E81D50F3A00026EB0A /* LaunchScreen.storyboard */; };
+		A4E225FB1D5104540026EB0A /* AutoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E225F91D5104540026EB0A /* AutoCell.m */; };
+		A4E225FC1D5104540026EB0A /* AutoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E225FA1D5104540026EB0A /* AutoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16CCD84E1BD738993E13CD9A /* Pods-CellAutoHeight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellAutoHeight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CellAutoHeight/Pods-CellAutoHeight.debug.xcconfig"; sourceTree = "<group>"; };
 		A4E225D71D50F3A00026EB0A /* CellAutoHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellAutoHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E225DB1D50F3A00026EB0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4E225DD1D50F3A00026EB0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,11 @@
 		A4E225E61D50F3A00026EB0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4E225E91D50F3A00026EB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E225EB1D50F3A00026EB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E225F81D5104540026EB0A /* AutoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCell.h; sourceTree = "<group>"; };
+		A4E225F91D5104540026EB0A /* AutoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCell.m; sourceTree = "<group>"; };
+		A4E225FA1D5104540026EB0A /* AutoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoCell.xib; sourceTree = "<group>"; };
+		AC593DCAEE632F237FB9DB8C /* libPods-CellAutoHeight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CellAutoHeight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB415BFD1A4444A52A107E77 /* Pods-CellAutoHeight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellAutoHeight.release.xcconfig"; path = "Pods/Target Support Files/Pods-CellAutoHeight/Pods-CellAutoHeight.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +42,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86699FD849BB83BD5470CF24 /* libPods-CellAutoHeight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83A3BB4E7B3492132DEC9BAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16CCD84E1BD738993E13CD9A /* Pods-CellAutoHeight.debug.xcconfig */,
+				DB415BFD1A4444A52A107E77 /* Pods-CellAutoHeight.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A4E225CE1D50F3A00026EB0A = {
 			isa = PBXGroup;
 			children = (
 				A4E225D91D50F3A00026EB0A /* CellAutoHeight */,
 				A4E225D81D50F3A00026EB0A /* Products */,
+				83A3BB4E7B3492132DEC9BAC /* Pods */,
+				A8AF9AECE3B8275B57A0A9F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +88,9 @@
 				A4E225E81D50F3A00026EB0A /* LaunchScreen.storyboard */,
 				A4E225EB1D50F3A00026EB0A /* Info.plist */,
 				A4E225DA1D50F3A00026EB0A /* Supporting Files */,
+				A4E225F81D5104540026EB0A /* AutoCell.h */,
+				A4E225F91D5104540026EB0A /* AutoCell.m */,
+				A4E225FA1D5104540026EB0A /* AutoCell.xib */,
 			);
 			path = CellAutoHeight;
 			sourceTree = "<group>";
@@ -79,6 +103,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A8AF9AECE3B8275B57A0A9F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC593DCAEE632F237FB9DB8C /* libPods-CellAutoHeight.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4E225EE1D50F3A00026EB0A /* Build configuration list for PBXNativeTarget "CellAutoHeight" */;
 			buildPhases = (
+				ABF70E34C3F99DEA7C2967AF /* Check Pods Manifest.lock */,
 				A4E225D31D50F3A00026EB0A /* Sources */,
 				A4E225D41D50F3A00026EB0A /* Frameworks */,
 				A4E225D51D50F3A00026EB0A /* Resources */,
+				655406410AA00989755C2844 /* Embed Pods Frameworks */,
+				F4051800C184037C4DA3D84E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E225EA1D50F3A00026EB0A /* LaunchScreen.storyboard in Resources */,
+				A4E225FC1D5104540026EB0A /* AutoCell.xib in Resources */,
 				A4E225E71D50F3A00026EB0A /* Assets.xcassets in Resources */,
 				A4E225E51D50F3A00026EB0A /* Main.storyboard in Resources */,
 			);
@@ -145,11 +181,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		655406410AA00989755C2844 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CellAutoHeight/Pods-CellAutoHeight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABF70E34C3F99DEA7C2967AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4051800C184037C4DA3D84E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CellAutoHeight/Pods-CellAutoHeight-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4E225D31D50F3A00026EB0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E225FB1D5104540026EB0A /* AutoCell.m in Sources */,
 				A4E225E21D50F3A00026EB0A /* ViewController.m in Sources */,
 				A4E225DF1D50F3A00026EB0A /* AppDelegate.m in Sources */,
 				A4E225DC1D50F3A00026EB0A /* main.m in Sources */,
@@ -262,9 +347,11 @@
 		};
 		A4E225EF1D50F3A00026EB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16CCD84E1BD738993E13CD9A /* Pods-CellAutoHeight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CellAutoHeight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noveleven.CellAutoHeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,9 +360,11 @@
 		};
 		A4E225F01D50F3A00026EB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB415BFD1A4444A52A107E77 /* Pods-CellAutoHeight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CellAutoHeight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noveleven.CellAutoHeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +390,7 @@
 				A4E225F01D50F3A00026EB0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
